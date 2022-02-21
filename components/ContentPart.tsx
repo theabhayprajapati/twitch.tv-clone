@@ -12,7 +12,7 @@ const ContentPart = () => {
     const [data, setData] = useState<any>([])
     const [loading, setLoading] = useState(true)
     useEffect(() => {
-        axios.get('https://api.themoviedb.org/3/movie/popular?api_key=ed3edb7ce3ae6a7ec3b86089be892cfb&language=en-US&page=1')
+        axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=ed3edb7ce3ae6a7ec3b86089be892cfb&language=en-US&page=1`)
             .then(res => {
                 setData(res.data.results)
                 setLoading(false)

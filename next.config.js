@@ -2,6 +2,8 @@
 const path = require('path');
 module.exports = {
   reactStrictMode: true,
+
+  // setting public api keys
   // images domains
   images: {
     domains: [
