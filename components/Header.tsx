@@ -1,27 +1,56 @@
 import React from 'react'
 import { DotsVerticalIcon, SearchIcon } from '@heroicons/react/solid'
-import { AnnotationIcon, UserIcon } from '@heroicons/react/outline'
+import { AnnotationIcon, CollectionIcon, UserIcon } from '@heroicons/react/outline'
+import { useRouter } from 'next/router'
+import Image from 'next/image'
 
-const Header = () => {
+const HeaderComponent = () => {
+  const router = useRouter()
   const session = true
   return (
     <header className="h-12 border-2 bg-twich-light px-3 z-50 shadow-md sticky top-0 bg-slate-100 max-w-7xl mx-auto">
-      <div className='grid grid-cols-5 items-center justify-items-center h-full' >
-        <div className='justify-self-start  w-full '>
+      <div className='grid grid-cols-7 md:grid-cols-5 items-center justify-items-center h-full' >
+
+
+
+
+        <div className='justify-self-start col-span-2 md:col-span-1 w-full '>
           {/* //image; text; vertical dots */}
           <div className='flex space-x-4 items-center'>
-            <img src='/TwitchGlitchPurple.png' alt='Twitch Logo' className='h-7' />
-            <h1 className='text-sm font-bold '>Browse</h1>
+            <Image height={'28px'} width={'28px'} src='/TwitchGlitchPurple.png' alt='Twitch Logo' className='h-7 cursor-pointer' onClick={() => router.push("/")} />
+            <h1 className='text-sm font-bold hidden md:inline-flex cursor-pointer' onClick={() => router.push("/categories")}>Browse</h1>
+            {/* add a collection icon */}
+            <CollectionIcon className='h-6 text-twich-black md:hidden cursor-pointer' onClick={() => router.push("/categories")} />
+            <DotsVerticalIcon className='h-6 text-twich-black hidden md:inline-flex' />
+          </div>
+        </div>
+
+
+        <div className='col-span-3 justify-self-end md:hidden'>
+          <button className='bg-purple-500 px-2 py-1  rounded-md'>
+            Open in App
+          </button>
+        </div>
+
+        {/* add search icons and vertical docts icons */}
+        <div className='col-span-2 md:col-span-1 justify-self-center  md:hidden'>
+          <div className='flex space-x-2 items-center'>
+            <SearchIcon className='h-6 text-twich-black' />
             <DotsVerticalIcon className='h-6 text-twich-black' />
           </div>
         </div>
-        <div className='justify-self-center col-span-3 border-2 rounded-md'>
+
+
+        <div className='justify-self-center col-span-3 border-2 rounded-md hidden md:inline-grid'>
           <div className='flex rounded-md w-full h-8 items-center '>
             <input type="text" placeholder='Search' className='outline-none placeholder:h-8  px-2' />
             <SearchIcon className='h-6 text-twich-black px-2  border-l-2 bg-slate-200 ' />
           </div>
         </div>
-        <div className='justify-self-end '>
+
+
+
+        <div className='justify-self-end hidden md:inline-grid'>
           {
             session ? (
               <div className='flex space-x-4'>
@@ -39,9 +68,12 @@ const Header = () => {
             )
           }
         </div>
+
+
+
       </div>
     </header>
   )
 }
 
-export default Header
+export default HeaderComponent
