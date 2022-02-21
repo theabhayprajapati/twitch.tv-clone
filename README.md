@@ -41,7 +41,7 @@ yarn create next-app --e with-tailwindcss twitchclone
 
 **Twitch TV Desktop:🖥️**
 <div>
-    <img src="public/twitchtvdesktopview.png" alt="" width="630" height="380"/>
+    <img src="public/twitchtvdesktopview.png" alt="" width="630" height="380" class="hidden md:visible"/>
 </div>
 
 
