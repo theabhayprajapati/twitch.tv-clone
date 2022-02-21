@@ -41,14 +41,17 @@ const HeaderComponent = () => {
         </div>
 
 
-        <div className='justify-self-center col-span-3 border-2 rounded-md hidden md:inline-grid'>
-          <div className='flex rounded-md w-full h-8 items-center '>
-            <input type="text" placeholder='Search' className='outline-none placeholder:h-8  px-2' />
-            <SearchIcon className='h-6 text-twich-black px-2  border-l-2 bg-slate-200 ' />
+        {/* <div className='justify-self-center col-span-3 border-2 rounded-l-md hidden md:inline-grid bg-slate-200'>
+          <div className='flex rounded-l-md w-full h-full items-center roundmd '>
+            <input type="text" placeholder='Search' className='outline-none placeholder:h-8  px-2 h-full py-1 bg-white' />
+            <SearchIcon className='h-7 text-twich-black px-2  border-l-2 bg-white py-1' />
           </div>
+        </div> */}
+
+        <div className='col-span-3 md:flex bg-[#F2F2F2] justify-self-center rounded-md w-64 justify-between border-2 hidden  '>
+          <input type="search" name="" placeholder="Search" className='hover:ring-1 ring-gray-400 rounded-l-md focus:bg-white m-0 focus:ring-purple-600 outline-none   px-2 text-sm w-[85%] bg-[#E5E5E5]' id="" />
+          <SearchIcon className='h-8  p-1 w-[15%] hover:bg-slate-200 cursor-not-allowed rounded-r-md' />
         </div>
-
-
 
         <div className='justify-self-end hidden md:inline-grid'>
           {
