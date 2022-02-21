@@ -6,7 +6,12 @@ This project is build with [`Tailwind CSS`](https://tailwindcss.com/) [`(v3.0)`]
 
 Preview the example live on [Twitch Tv](https://twitch-tv-clone.vercel.app/):
 
-[![Open Twitch Clone](public/TwitchExtrudedWordmarkPurple.png)](https://twitch-tv-clone.vercel.app/)
+**Desing materials and inspiration has been taken directly from [`Twitch Tv`](https://twitch.tv/)**
+<!-- adding iamges with the help of div and image tags -->
+
+<div>
+    <img  src="public/TwitchExtrudedWordmarkPurple.png" alt="Twitch Logo" height="50" width="150"/>
+</div>
 
 ## Deployed on vercel
 
@@ -30,10 +35,12 @@ yarn create next-app --e with-tailwindcss twitchclone
 
 <!-- adding files fromn public folder -->
 
+**Mobile View:**
 <div>
 <img src="public/twitchtvmobileview.png" alt="" width="390" height="844"/>
 </div>
 
+**Twitch TV Desktop:**
 <div>
     <img src="public/twitchtvdesktopview.png" alt="" width="630" height="380"/>
 </div>
