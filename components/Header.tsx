@@ -50,7 +50,7 @@ const HeaderComponent = () => {
 
         <div className='col-span-3 md:flex bg-[#F2F2F2] justify-self-center rounded-md w-64 justify-between border-2 hidden  '>
           <input type="search" name="" placeholder="Search" className='hover:ring-1 ring-gray-400 rounded-l-md focus:bg-white m-0 focus:ring-purple-600 outline-none   px-2 text-sm w-[85%] bg-[#E5E5E5]' id="" />
-          <SearchIcon className='h-8  p-1 w-[15%] hover:bg-slate-200 cursor-not-allowed rounded-r-md' />
+          <SearchIcon className='h-8  p-1 w-[15%] hover:bg-slate-200 cursor-not-allowe rounded-r-md' />
         </div>
 
         <div className='justify-self-end hidden md:inline-grid'>

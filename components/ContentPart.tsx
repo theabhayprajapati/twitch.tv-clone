@@ -5,9 +5,8 @@ import Categories from './categories'
 import ContentCard from './ContentCard'
 
 const ContentPart = () => {
-    // fetch this url https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=Live%20Gaming&key=AIzaSyBU_-73kGPkTf8fSiWVfg13__JDr0VOzAo       
-    // with axios
-    // and set the state of the data to the data
+
+l
     const router = useRouter()
 
     const [data, setData] = useState<any>([])
