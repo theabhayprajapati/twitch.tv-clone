@@ -6,7 +6,7 @@ import ContentCard from './ContentCard'
 
 const ContentPart = () => {
 
-l
+
     const router = useRouter()
 
     const [data, setData] = useState<any>([])
